@@ -10,6 +10,9 @@
 html, body, .container {
 	height: 100%;
 	font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, Arial, sans-serif;
+	background-color: black;
+	background-image: linear-gradient(rgb(50,50,50), black);
+	overflow: hidden;
 }
 
 .h4, h4 {
@@ -23,6 +26,7 @@ html, body, .container {
 	vertical-align: middle;
 	border: 0px;
 	border-spacing: 0px;
+	
 }
 
 .glyphicon-spin {
@@ -60,6 +64,7 @@ html, body, .container {
 	position: relative;
 	text-align: center;
 	justify-content: center;
+
 }
 
  .emscripten {
