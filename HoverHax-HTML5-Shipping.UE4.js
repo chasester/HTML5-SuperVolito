@@ -405,8 +405,8 @@ Module['UE4_fullscreenFilteringMode'] = 0;
 
 var enableReadFromIndexedDB = (location.search.indexOf('noidbread') == -1);
 var enableWriteToIndexedDB = enableReadFromIndexedDB && (location.search.indexOf('noidbwrite') == -1);
-enableReadFromIndexedDB = false;
-enableWriteToIndexedDB = false;
+enableReadFromIndexedDB = true;
+enableWriteToIndexedDB = true;
 
 if (!enableReadFromIndexedDB) showWarningRibbon('Running with IndexedDB access disabled.');
 else if (!enableWriteToIndexedDB) showWarningRibbon('Running in read-only IndexedDB access mode.');
@@ -427,7 +427,7 @@ function formatBytes(bytes) {
 function reportDataBytesStoredInIndexedDB(deltaBytes) {
 	if (deltaBytes === null) Module['dataBytesStoredInIndexedDB'] = 0; // call with deltaBytes == null to report that DB was cleared.
 	else Module['dataBytesStoredInIndexedDB'] += deltaBytes;
-	document.getElementById('clear_indexeddb').innerText = 'Clear IndexedDB (' + formatBytes(Module['dataBytesStoredInIndexedDB']) + ')';
+	//document.getElementById('clear_indexeddb').innerText = 'Clear IndexedDB (' + formatBytes(Module['dataBytesStoredInIndexedDB']) + ')';
 }
 
 function deleteIndexedDBStorage(dbName, onsuccess, onerror, onblocked) {
@@ -788,7 +788,7 @@ function taskProgress(taskId, progress) {
 	}
 	if (!l.startTime) l.startTime = performance.now();
 	var text = loadTasks[taskId];
-	if (progress && progress.total) {
+	if (progress && progress.total && false) {
 		text += ': ' + (progress.currentShow || progress.current) + '/' + (progress.totalShow || progress.total) + ' (' + (progress.current * 100 / progress.total).toFixed(0) + '%)';
 	} else {
 		text += '...';
