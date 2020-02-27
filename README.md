@@ -9,14 +9,14 @@
 # In Progressess (next update)
   ## No Later Than March 6, 2020
   * Featues
-    * ~~Add Slow downs on certian terrain (both hazards and off track).
+    * ~~Add Slow downs on certian terrain (both hazards and off track).~~
     * Gui Explaining controls
     * Gui Explaining project and goals
     * Gui For credidation
     * Improved Enviroment
     
   * Bug Fixes
-    * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)
+    * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)~~
     * Fix Track lighting glitches by removing all back faces
 
 
