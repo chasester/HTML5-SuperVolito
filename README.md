@@ -61,3 +61,25 @@
   * Kill craft button doesnt work even though it was expected to
   * Needs suport for saving download
   * Needs better compression
+
+# Credits
+  Chase Wenner
+  Valknor (Chris)
+  Leviscus Tempris (James)
+  
+### Specail Thanks
+  * Walciony - For Music help
+  * Awol - For Model tips and Animation Suport
+  * Sniper Goth - For Model tips and Uv help
+  * WatisDeze - For Coding suport
+  #### Core Game Testers
+  Captain Chronic.
+  Alhoprod,
+  Asian Man Tran,
+  Auios,
+  MarshallOutlaw,
+  Rainee,
+  Crisprlexi,
+  Mauircio Degregori,
+  Nick Migel,
+  And Many Others
