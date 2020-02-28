@@ -13,7 +13,7 @@
     * Gui Explaining controls
     * Gui Explaining project and goals
     * Gui For credidation
-    * Improved Enviroment
+    * Improved Enviroment - enviroment imrpovemnts will massively increase file size (looking for even more compression if possible or reducing tri/texture sizes[recent landscape update made asset downloade 250mb] )
     
   * Bug Fixes
     * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)~~
