@@ -13,12 +13,17 @@
     * Gui Explaining controls
     * Gui Explaining project and goals
     * Gui For credidation
-    * Improved Enviroment - enviroment imrpovemnts will massively increase file size (looking for even more compression if possible or reducing tri/texture sizes[recent landscape update made asset downloade 250mb] )
+    * ~~Improved Enviroment - enviroment imrpovemnts will massively increase file size (looking for even more compression if possible or reducing tri/texture sizes[recent landscape update made asset downloade 250mb] )~~ Wont happen due to file size issues
+    *  ~~Added new model to replace or go along with ship.~~
+    * ~~Add test run on another repo for full multiplay~~ Mounted onto server trying to work out server kinks
     
   * Bug Fixes
     * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)~~
-    * Fix Track lighting glitches by removing all back faces
-
+    * ~~Fix Track lighting glitches by removing all back faces~~ removed back faces but didnt fix problem
+    * From above, seems problem is related to both gaurd rails being active, Going to try to fix bakc faces in guard rails
+    
+* Known Bugs
+  * Fire shows wrong hue of color, (something unquie to the es2 shader library) will need further research. May be ignored for now
 
 # Updates (sorted by newest)
 ## Feburary 26, 2020 - Lap Times Update
