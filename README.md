@@ -6,7 +6,7 @@
 * Create an expirence that most compputer can handle (low frame lantency [30-50 fps])
 * Add Multiplayer for future use in other games/demos.
 
-# In Progressess (next update)
+# In Progressess (next update) [Live]
   ## No Later Than March 6, 2020
   * Featues
     * ~~Add Slow downs on certian terrain (both hazards and off track).~~
