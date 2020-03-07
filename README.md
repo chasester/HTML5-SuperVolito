@@ -6,20 +6,30 @@
 * Create an expirence that most compputer can handle (low frame lantency [30-50 fps])
 * Add Multiplayer for future use in other games/demos.
 
-# In Progressess (next update)
+# In Progressess (next update) [Live]
   ## No Later Than March 6, 2020
   * Featues
-    * ~~Add Slow downs on certian terrain (both hazards and off track).
-    * Gui Explaining controls
-    * Gui Explaining project and goals
-    * Gui For credidation
-    * Improved Enviroment
+    * ~~Add Slow downs on certian terrain (both hazards and off track).~~
+    * ~~Gui Explaining controls~~
+    * ~~Gui Explaining project and goals~~
+    * ~~Gui For credidation~~
+    * ~~Added Scafoldng for multiplayer~~
+    * ~~Tested with deticated server~~ (will need to move from netlify to web server withoug hhtps to allow for web sockets)
+    * ~~Improved Enviroment - enviroment imrpovemnts will massively increase file size (looking for even more compression if possible or reducing tri/texture sizes[recent landscape update made asset downloade 250mb] )~~ Wont happen due to file size issues
+    *  ~~Added new model to replace or go along with ship.~~
+    * ~~Add test run on another repo for full multiplay~~ Mounted onto server trying to work out server kinks
     
   * Bug Fixes
-    * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)
-    * Fix Track lighting glitches by removing all back faces
-
-
+    * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)~~
+    * ~~Fix Track lighting glitches by removing all back faces~~ removed back faces but didnt fix problem
+    * ~~From above, seems problem is related to both gaurd rails being active, Going to try to fix bakc faces in guard rails~~
+    * ~~Fixed various bugs for multiplayer deployment~~
+    
+* Known Bugs
+  * Fire shows wrong hue of color, (something unquie to the es2 shader library) will need further research. May be ignored for now
+  * Small light glitches on spline mesh Not active in non es2 (mayber an issue with this)
+  * Craft floats to ez maybe add some linear dampaning to promote the craft to stop. (thisc could be presient if no forward input is pressed).
+  
 # Updates (sorted by newest)
 ## Feburary 26, 2020 - Lap Times Update
 * Features
@@ -61,3 +71,25 @@
   * Kill craft button doesnt work even though it was expected to
   * Needs suport for saving download
   * Needs better compression
+
+# Credits
+  Chase Wenner
+  Valknor (Chris)
+  Leviscus Tempris (James)
+  
+### Specail Thanks
+  * Walciony - For Music help
+  * Awol - For Model tips and Animation Suport
+  * Sniper Goth - For Model tips and Uv help
+  * WatisDeze - For Coding suport
+  #### Core Game Testers
+  Captain Chronic.
+  Alhoprod,
+  Asian Man Tran,
+  Auios,
+  MarshallOutlaw,
+  Rainee,
+  Crisprlexi,
+  Mauircio Degregori,
+  Nick Migel,
+  And Many Others
