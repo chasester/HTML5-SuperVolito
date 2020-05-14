@@ -6,21 +6,8 @@
 * Create an expirence that most compputer can handle (low frame lantency [30-50 fps])
 * Add Multiplayer for future use in other games/demos.
 
-# In Progressess (next update)
-  ## No Later Than March 6, 2020
-  * Featues
-    * ~~Add Slow downs on certian terrain (both hazards and off track).
-    * Gui Explaining controls
-    * Gui Explaining project and goals
-    * Gui For credidation
-    * Improved Enviroment
-    
-  * Bug Fixes
-    * ~~Make gaurd rails no trace so they dont get flown over top of (this will be a global fix)
-    * Fix Track lighting glitches by removing all back faces
+# Status: Suspended
 
-
-# Updates (sorted by newest)
 ## Feburary 26, 2020 - Lap Times Update
 * Features
   * Added existing code for lap timer and Checkpoints
