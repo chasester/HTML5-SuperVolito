@@ -788,7 +788,7 @@ function taskProgress(taskId, progress) {
 	}
 	if (!l.startTime) l.startTime = performance.now();
 	var text = loadTasks[taskId];
-	if (progress && progress.total && false) {
+	if (progress && progress.total) {
 		text += ': ' + (progress.currentShow || progress.current) + '/' + (progress.totalShow || progress.total) + ' (' + (progress.current * 100 / progress.total).toFixed(0) + '%)';
 	} else {
 		text += '...';
