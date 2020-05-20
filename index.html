@@ -44,7 +44,7 @@
 	<link href="HoverHax-HTML5-Shipping.css" rel="stylesheet">
 </head>
 <body>
-<div id="header" style="display: flex; justify-content: center; z-index: 100; margin-bottom: -70px;"><img src="./images/BannerMain.png" width="100%"></img></div>
+<div id="header" style=""><img src="./images/BannerMain.png" width="100%"></img></div>
 <div class="wrapper" id="mainarea">
 	<div class="alert alert-warning centered-axis-xy" style="min-height: 20px; display:none; background-color: rgba(255,255,255, 50);" role="alert" id="compilingmessage">
 		<div id='loadTasks'>Takes about 1-2 mins to load</div>
@@ -65,5 +65,16 @@
 <!-- <div class="texthalf text-normal jumbotron " id="logwindow" style='display:none'></div> -->
 
 <script src="HoverHax-HTML5-Shipping.UE4.js"></script>
+<script>
+	var canvasloadtimer = setInterval(() => {
+		if(document.querySelector("canvas").style.display == "none")return;
+		window.clearInterval(canvasloadtimer);
+		let div = document.querySelector("#header");
+		div.style.marginBottom = "-10%";
+		div.style.opacity = 0;
+		div.style.maxHieght = 0;
+		document.querySelectorAll(".btn").forEach((x) => x.style.opacity = 1);
+	} , 10)
+</script>
 </body>
 </html

@@ -83,6 +83,8 @@ html, body, .container {
 	-webkit-box-pack: center;
 	-moz-box-pack: center;
 	box-pack: center;
+
+	outline: black;
 }
 
 #canvas:not([fullscreen]) {
@@ -110,7 +112,7 @@ html, body, .container {
 	margin-bottom: 0px;
  }
 
-.btn { padding: 0px; text-align: center; min-width: 150px }
+.btn { padding: 0px; text-align: center; min-width: 150px; transition: 2s linear; opacity: 0; }
 .progress { background: rgba(245, 245, 245, 1); border: 0px solid rgba(245, 245, 245, 1); border-radius: 0px; height: 4px; }
 .progress-bar-custom { background: rgba(153, 153, 153, 1); }
 .centered-axis-xy {
@@ -118,5 +120,16 @@ html, body, .container {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
+}
+
+#header
+{
+	display: flex; 
+	justify-content: center; 
+	z-index: 100; 
+	margin-bottom: -5%;
+	transition: 0.5s linear;
+	max-height: 100%;
+	opacity: 1;
 }
 
