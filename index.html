@@ -46,7 +46,7 @@
 <body>
 <div id="header" style=""><img src="./images/BannerMain.png" width="100%"></img></div>
 <div class="wrapper" id="mainarea">
-	<div class="alert alert-warning centered-axis-xy" style="min-height: 20px; display:none; background-color: rgba(255,255,255, 50);" role="alert" id="compilingmessage">
+	<div class="alert alert-warning centered-axis-xy" style="margin-top: 5%; min-height: 20px; opacity: 0; transition: opacity 1s ease-in; background-color: rgba(255,255,255, 50);" role="alert" id="compilingmessage">
 		<div id='loadTasks'>Takes about 1-2 mins to load</div>
 	</div>
 	<!-- The "tabindex=0" specifier on the canvas is important to allow it to capture keyboard focus when clicking on it with a mouse -->
@@ -58,7 +58,7 @@
 	<div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="try { Module['resumeMainLoop'](); } catch(e) {console.error(e);}">Resume</button></div> -->
 	<!-- <div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" onclick="var w = document.getElementById('logwindow'); w.style.display = w.style.display ? '' : 'none';">Toggle Log</button></div> -->
 	<!-- <div class="col-sm-2 text-center"><button type="button" class="btn btn-primary" id='clear_indexeddb' onclick="try { deleteIndexedDBStorage(); } catch(e) {console.error(e);}">Clear IndexedDB</button></div> -->
-	<div class="" style="display: flex; justify-content: center;" ><button type="button" class="btn btn-primary" id="fullscreen_request">FullScreen</button></div>
+	<div class="" style="display: flex;" ><button type="button" style="margin: 0 auto" class="btn btn-primary" id="fullscreen_request">FullScreen</button><div style="padding: 0 1.5%"></div></div>
 <!-- 	<div class="col-sm-2 text-center"></div>
 	<div class="col-sm-2 text-center"></div> -->
 <!-- </div> -->
@@ -66,13 +66,16 @@
 
 <script src="HoverHax-HTML5-Shipping.UE4.js"></script>
 <script>
+	setTimeout(() => {
+		document.querySelector("#header").style.opacity = 1
+		document.querySelector(".alert").style.opacity = 1
+	}, 200);
 	var canvasloadtimer = setInterval(() => {
 		if(document.querySelector("canvas").style.display == "none")return;
 		window.clearInterval(canvasloadtimer);
 		let div = document.querySelector("#header");
-		div.style.marginBottom = "-10%";
+		//div.style.marginBottom = "-10%";
 		div.style.opacity = 0;
-		div.style.maxHieght = 0;
 		document.querySelectorAll(".btn").forEach((x) => x.style.opacity = 1);
 	} , 10)
 </script>
